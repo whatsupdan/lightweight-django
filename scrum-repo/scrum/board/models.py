@@ -35,7 +35,8 @@ class Task(models.Model):
     order = models.SmallIntegerField(default=0)
     assigned = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, blank=True)
     started = models.DateField(blank=True, null=True)
-    competed = models.DateField(blank=True, null=True)
+    due = models.DateField(blank=True, null=True)
+    completed = models.DateField(blank=True, null=True)
 
     def __str__(self):
         return self.name
