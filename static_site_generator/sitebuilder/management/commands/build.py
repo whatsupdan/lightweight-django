@@ -18,6 +18,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         """Request pages and build outputs."""
+        settings.DEBUG = False
         if args:
             pages = args
             available = list(get_pages())
