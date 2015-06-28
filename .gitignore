@@ -59,4 +59,7 @@ target/
 #PyCharm
 .idea/
 
+# static output files
+_build/
+
 
